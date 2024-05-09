@@ -6,22 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Development</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="header">
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfNmhG6UqA9Txp_MH3U6cQ0VaVX4bIlq86TNT2xVnxzKZaWX1R" class="header-img" alt="Header Image">
-            <h1>Empowering Tomorrow, Today with Main Flow</h1>
+    <div class="minn-w-screen h-screen">
+        <div class="bg-black">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfNmhG6UqA9Txp_MH3U6cQ0VaVX4bIlq86TNT2xVnxzKZaWX1R" class="w-full" alt="Header Image">
+            <h1 class="text-white bg-transparent text-right text-xs">Empowering Tomorrow, Today with Main Flow</h1>
         </div>
-        <div class="content">
-            <h2>Web Development</h2>
-            <h3>TASK-1</h3>
-            <h4>1. Basic Level: HTML Structure and Styling</h4>
-            <p>Description:</p>
-            <p>Create a simple webpage using HTML to define its structure and CSS to style elements such as text, colors, and layout.</p>
-            <p>Responsibility:</p>
-            <p>Ensure semantic HTML markup for accessibility and search engine optimization (SEO). Use CSS responsibly to maintain consistency and enhance user experience.</p>
+        <div class="flex flex-col items-start p-4 ">
+            <h2 class="text-blue-400 font-semibold text-xl font-inter">Web Development</h2>
+            <div class="flex flex-col mt-5">
+                <h3 class="text-blue-400 font-medium">TASK-1</h3>
+                <div class="p-5 gap-4">
+                    <h4 class="my-4 text-slate-500 font-semibold">1. Basic Level: HTML Structure and Styling</h4>
+                    <div>
+                        <p class="font-bold my-4">Description:</p>
+                        <p>Create a simple webpage using HTML to define its structure and CSS to style elements such as text, colors, and layout.</p>
+                    </div>
+                    <div>
+                        <p class="font-bold my-4">Responsibility:</p>
+                        <p>Ensure semantic HTML markup for accessibility and search engine optimization (SEO). Use CSS responsibly to maintain consistency and enhance user experience.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
