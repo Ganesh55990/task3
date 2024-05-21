@@ -4,35 +4,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Development</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>My Simple Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
-<body>
-    <div class="minn-w-screen h-screen">
-        <div class="bg-black">
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSfNmhG6UqA9Txp_MH3U6cQ0VaVX4bIlq86TNT2xVnxzKZaWX1R" class="w-full" alt="Header Image">
-            <h1 class="text-white bg-transparent text-right text-xs">Empowering Tomorrow, Today with Main Flow</h1>
-        </div>
-        <div class="flex flex-col items-start p-4 ">
-            <h2 class="text-blue-400 font-semibold text-xl font-inter">Web Development</h2>
-            <div class="flex flex-col mt-5">
-                <h3 class="text-blue-400 font-medium">TASK-1</h3>
-                <div class="p-5 gap-4">
-                    <h4 class="my-4 text-slate-500 font-semibold">1. Basic Level: HTML Structure and Styling</h4>
-                    <div>
-                        <p class="font-bold my-4">Description:</p>
-                        <p>Create a simple webpage using HTML to define its structure and CSS to style elements such as text, colors, and layout.</p>
+<body class="font-sans leading-normal tracking-normal">
+    <header class="bg-gray-800 py-4">
+        <nav class=" container mx-auto px-4 flex items-center justify-between">
+            <a class="text-white font-bold" href="#">Ganesh Konda Webpage Demo</a>
+            <ul class="flex">
+                <li class="mr-6"><a class="text-white hover:text-gray-300" href="#home">Home</a></li>
+                <li class="mr-6"><a class="text-white hover:text-gray-300" href="#about">About</a></li>
+                <li class="mr-6"><a class="text-white hover:text-gray-300" href="#services">Services</a></li>
+                <li class="mr-6"><a class="text-white hover:text-gray-300" href="#blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container mx-auto px-4 py-8">
+        <section class="mb-8" id="home">
+            <h2 class="text-2xl font-bold mb-4">Home</h2>
+            <p class="mb-4">This is a simple webpage created with HTML and TailwindCSS. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, magna id malesuada facilisis, magna mauris volutpat purus, vel viverra elit tellus a mi.</p>
+            <p>Nullam ac nisl at lectus rhoncus efficitur. Fusce quis orci ut eros varius tincidunt. Sed feugiat eros id tellus fringilla, id ultrices leo bibendum.</p>
+        </section>
+        <section class="mb-8" id="services">
+            <h2 class="text-2xl font-bold mb-4">Services</h2>
+            <ul class="list-disc pl-4 mb-4">
+                <li>Service 1</li>
+                <li>Service 2</li>
+                <li>Service 3</li>
+            </ul>
+            <p>Our services are designed to meet your needs and exceed your expectations. We offer a wide range of solutions tailored to your specific requirements.</p>
+        </section>
+        <section class="mb-8" id="blog">
+            <h2 class="text-2xl font-bold mb-4">Blog</h2>
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://via.placeholder.com/500x300" alt="Blog Post 1">
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-2">Blog Post 1</h3>
+                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        </div>
                     </div>
-                    <div>
-                        <p class="font-bold my-4">Responsibility:</p>
-                        <p>Ensure semantic HTML markup for accessibility and search engine optimization (SEO). Use CSS responsibly to maintain consistency and enhance user experience.</p>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://via.placeholder.com/500x300" alt="Blog Post 2">
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-2">Blog Post 2</h3>
+                            <p class="text-gray-600">Nullam ac nisl at lectus rhoncus efficitur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img class="w-full h-48 object-cover" src="https://via.placeholder.com/500x300" alt="Blog Post 3">
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold mb-2">Blog Post 3</h3>
+                            <p class="text-gray-600">Fusce quis orci ut eros varius tincidunt.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+    </main>
+    <footer class="bg-gray-800 py-4 mt-8" id="about">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-white">&copy; 2024 Ganesh Webpage. All rights reserved.</p>
         </div>
-    </div>
+    </footer>
 </body>
 
 </html>
